@@ -1,0 +1,513 @@
+body{
+    background-color: #ebe8e8;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.col-4 {
+    width: 33.33%;
+    float: left;
+}
+
+.col-1 {
+    width: 8.33%;
+    float: left;
+}
+
+.col-6 {
+    width: 50%;
+    float: left;
+}
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background:linear-gradient(#302927, rgba(255, 255, 255, 0));
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+}
+.hamburger {
+    font-size: 30px;
+    color: #302927;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 11px;
+    width: 70px;
+    right: 0;
+    left:auto;
+
+}
+
+.sidenav a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #302927;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 80px;
+    margin: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+.row{
+    margin-left: 0px;
+    width: 100%;
+}
+.logo{
+    margin-left: 50px;
+    text-decoration: none;
+    color: #302927;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+header ul{
+    color: #302927;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header ul li {
+    margin-top: 10px;
+position: relative;
+}
+
+header ul a{
+    position: relative;
+    font-size: 20px;
+    color:#302927;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.line11{
+    height: 35px;
+    width: 4px;
+    border-right:solid 1px rgb(255, 255, 255) ;
+}
+
+
+
+
+
+
+/* the start of the hover of nav yaaaaaaaaaaa zyad..........*/
+.navitem:hover{
+    color: #302927;
+    cursor: pointer;
+}
+
+.navitem::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* المسافة بين النص والخط */
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #7a564d;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+.navitem:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* the end of the hover of nav yaaaaaaaaaaa zyad..........*/
+/*............. المهم بس ادي لل a --
+navitem تاج اللي جوا الناف كلاس نيم ................*/
+
+
+
+
+
+.dropdown{
+    z-index: 1000;
+}
+
+header ul .dropdown {
+display: none;
+position: absolute;
+width: auto;
+background-color: white;
+border-radius: 20px;
+list-style: none;
+padding: 20px 0;
+margin: 0;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+header ul .dropdown li {
+padding: 10px;
+margin: 0;
+width: 100%;
+}
+
+
+header ul .dropdown a {
+font-size: 15px;
+padding: 10px 20px;
+white-space: nowrap;
+border-bottom: none;
+color: #302927;
+}
+
+
+
+header ul .dropdown a:hover {
+background-color: #302927;
+border-radius: 30px;
+color: white;}
+
+.containerone{
+    width: 100%;
+    height: 100vh;
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+
+}
+#bookmark{
+    display: inline-block;
+}
+.firstsection{
+    display: flex;
+}
+.sqr{
+    width: 240px;
+    height: 300px;
+    background-color: #302927;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+}
+.tria{
+    width: 10px;
+    height: 10px;
+    border-top: solid #302927 120px;
+    border-bottom: solid transparent 0px;
+    border-left: solid transparent 120px;
+    border-right: solid transparent 120px;
+    color: white;
+}
+#profilephoto{
+    display: inline-block;
+    justify-content: center;
+}
+.profileimg{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ddd;
+    margin-top: 30px;
+
+}
+.profileimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .butn{
+    margin-top: 300px;
+    margin-left: 35px;
+
+}
+.butn .upload-btn{
+    color: white;
+    background-color: #302927;
+    border:solid 2px #302927;
+    border-radius: 25px;
+    height: 50px;
+    width: 180px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.butn .upload-btn:hover{
+    color: #302927;
+    transition: background-color 0.5s ease;
+    background-color: transparent;
+    border:solid 4px #302927;
+
+} */
+.butn {
+    margin-top: 300px;
+    margin-left: -65%;
+    /* Remove margin-left if you want it centered relative to its container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Optionally, set a fixed width/height if needed */
+    /* width: 100%; */
+}
+
+.butn .upload-btn {
+
+    color: white;
+    background-color: #302927;
+    border: solid 2px #302927;
+    border-radius: 25px;
+    height: 50px;
+    width: 180px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center; /* ensures text is centered */
+    line-height: 50px;  /* vertically centers text if button height is fixed */
+    transition: 0.3s all;
+    margin-left: -50px;
+}
+
+.butn .upload-btn:hover {
+    color: #302927;
+    background-color: transparent;
+    border: solid 2px #302927;
+}
+
+.secsection{
+    width: 100%;
+    height: 60vh;
+}
+.secsection2{
+    width: 100%;
+    height: 70vh;
+}
+.secsection3{
+    width: 100%;
+    height: 40vh;
+}
+
+.formone{
+    top:60px;
+    transform:translateX(0%);
+    width: 90%;
+    height: auto;
+    background-color: white;
+    border-radius: 25px;
+    margin-left: 5%;
+    padding: 35px;
+    margin-bottom: 40px;
+    font-size: 130%;
+}
+.formtwo{
+    width: 90%;
+    height: auto;
+    background-color: white;
+    border-radius: 25px;
+    margin-left: 5%;
+    padding: 35px;
+    margin-bottom: 40px;
+    font-size: 130%;
+}
+.formone h1{
+    font-weight:bold;
+
+}
+.formtwo h1{
+    font-weight:bold;
+}
+.formtwo p{
+    margin-left: 20px;
+    font-weight: lighter;
+    width: 60%;
+}
+.formone p{
+    margin-left: 20px;
+    font-weight: lighter;
+}
+.inputs{
+    width: 100%;
+}
+.inputs label{
+    font-weight: lighter;
+}
+.inputs input{
+    width:90%;
+    height: 35px;
+    border-radius: 8px;
+}
+.formtwo .inps{
+    border-radius: 0px;
+}
+.inputs button{
+    background-color: #302927;
+    border-radius: 8px;
+    width: 90px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    border:solid 2px #302927;
+
+}
+.inputs button:hover{
+    background-color: transparent;
+    color: #302927;
+    transition: background-color 0.5s ease;
+    border:solid 4px #302927;
+
+}
+.formtwo button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: not-allowed;
+    transition: background-color 0.5s ease;
+    border-radius: 0px;
+    border: none;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    margin-left: 20px;
+
+}
+
+.formtwo button.enabled {
+    background-color: red;
+    cursor: pointer;
+}
+
+#toggleCheckbox{
+    margin-left: 20px;
+}
+.confirmation{
+    margin-left: 10px;
+    color: #333;
+}
+
+
+footer {
+    padding: 2rem 0;
+  }
+
+  footer h3, footer h4 {
+    margin-bottom: 1rem;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  footer a {
+    text-decoration: none;
+  }
+
+  footer ul li {
+    margin-bottom: 1.5rem;
+  }
+
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+
+@media (max-width: 500px) {
+    .firstsection{
+        display: inline-block;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .col-4, .col-6 {
+        width: 100%; /* جعل العناصر تأخذ كامل العرض */
+    }
+    .col-1 {
+        display: none; /* إخفاء العمود 1 */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}
+@media (max-width: 940px) {
+    .sqr{
+        width: 200px;
+        height: 250px;
+        font-size: 40px;
+    }
+    .tria{
+        width: 0px;
+        height: 0px;
+        border-top: solid #302927 120px;
+        border-bottom: solid green 0px;
+        border-left: solid transparent 100px;
+        border-right: solid transparent 100px;
+    }
+    .profileimg{
+        width: 200px;
+        height: 200px;
+    }
+    .butn{
+        margin-top: 250px;
+        margin-left: 15px;
+    }
+    .butn button{
+        height: 50px;
+        width: 180px;
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width : 768px) {
+    header ul{
+        display: none;
+    }
+    #mySidenav2{
+        display: inline-block;
+        padding-right: 20px;
+        padding-top: 15px;
+    }
+    #mySidenav1{
+        display: inline-block;
+    }
+}

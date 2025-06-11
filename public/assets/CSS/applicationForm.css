@@ -1,0 +1,194 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+
+}
+.container{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+}
+.phoneimage{
+    display: none;
+    width: 200% !important;
+    height: 100% !important;
+    background-image: url('img.jpg');
+    background-size: cover;
+}
+.text{
+    width: 100%;
+    height: 100%;
+    background-color: #302927a6;
+    color: white;
+    font-size: 45px;
+    display: flex;
+}
+.text p{
+    margin-left: 15%;
+    width: 70%;
+    align-self: center;
+    text-align: center;
+}
+.desktopimage{
+    height: 100vh;
+    width: 43%;
+    background-image: url('../IMG/img.jpg');
+    background-size: cover;
+}
+.formdiv{
+    margin-top: 20px;
+    width: 100%;
+    height: 100vh;
+}
+.logo{
+    display: grid;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 6px;
+}
+.logo a{
+    text-decoration: none;
+    color: #302927;
+    font-size: 40px;
+    font-weight: bold;
+    justify-self: end;
+    margin-right: 50px;
+}
+#block{
+    margin-left: 5%;
+    width:40%;
+    display: inline-block;
+}
+#alone{   
+    margin-left: 5%;
+    width: 85%;
+}
+#alone label{
+    width:100%;
+}
+#alone input{
+    margin-top: 6px;
+    height: 20px; 
+    border: 1px solid black;
+    border-radius: 5px;
+    width:100%;
+    margin-bottom: 40px;
+}
+#block label{
+    width:100%;
+}
+#block input{   
+    margin-top: 12px;
+    height: 20px; 
+    border: 1px solid black;
+    border-radius: 5px;
+    width:100%;
+    margin-bottom: 40px;
+}
+.cv input .file{
+    background-color: #302927;
+}
+.border{
+    margin-top: 6px;
+    width: 86%;
+    border: 1px black solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 30px;
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+input[type="file"]{
+    display: none;
+}
+.custom-file-label{
+    height: 10px;
+    background-color: #302927;
+    color: white;
+    padding: 5px 12px 15px 12px;
+    border-radius: 5px;
+    border: 1px solid #302927;
+    cursor: pointer;
+    display: inline-block;
+    width: 10%;
+    transition: background 0.3s;
+    text-align: center;
+    font-size: 16px;
+}
+.custom-file-label:hover{
+    background-color: #634740;
+}
+
+#fileName{
+    font-size: 14px;
+    color: #333;
+}
+#cv #cvlabel{
+    margin-left: 5%;
+
+
+
+}
+
+button{
+    background-color: #302927d3;
+    margin-left: 40%;
+    height: 40px;
+    width: 150px;
+    border: solid #302927 3px;
+    border-radius: 30px;
+    background-color: #302927;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover{
+    border: solid #302927 3px;
+    color: #302927;
+    background-color: transparent;
+}
+
+
+@media screen and (max-width : 830px) {
+    body{
+        overflow:scroll;
+    }
+    .container{
+        display: block
+    }
+    .phoneimage{
+        display: flex;
+    }
+    .desktopimage{
+        display: none;
+    }
+    .custom-file-label{
+        width: 20%;
+    }
+    .logo{
+        display: none;
+    }
+    .formdiv{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    button{
+        margin-left: 30%;
+    }
+    .custom-file-label{
+        width: 25%;
+    }
+    .formdiv{
+        margin-top: 30px;
+
+    }
+}

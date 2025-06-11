@@ -1,0 +1,255 @@
+body{
+    background-color: #ebe8e8;
+}
+
+.profile-dropdown {
+    position: relative;
+}
+
+.profile-card {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #e3dad8;
+    padding: 20px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    font-family: sans-serif;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-header h5 {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 5px;
+    color:black ;
+}
+
+.manage-btn {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    background: #e3dad8;
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+    color: #2e7d32;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                border-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.2s ease;
+}
+
+.manage-btn:hover {
+    background-color: #d6c7c4;
+    border-color:    #388e3c;
+    color:           #25632e;
+    transform:       translateY(-2px);
+}
+
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px; /* زيادة المسافة بين الزرين */
+}
+.icon {
+    margin-right: 6px;
+    font-size: 16px;
+    color: #000; /* بدل من inline style */
+}
+
+.action-buttons a {
+    flex: 1;
+    min-width: 120px; /* عرض مناسب لتفادي ان الكلمة تنزل سطر */
+    padding: 15px 20px; /* تقليل الطول (ارتفاع) وزيادة العرض نسبيًا */
+    background: white;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 17px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    transition: background 0.2s;
+    white-space: nowrap; /* مهم لمنع ان الكلام ينزل سطر */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-buttons a:hover {
+    background: #f0f0f0;
+}
+
+.icon {
+    margin-right: 6px;
+}
+
+.d-none {
+    display: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;
+    background-image: none;
+    width: 30px;
+    height: 30px;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    position: absolute;
+}
+
+.carousel-control-prev-icon {
+    transform: rotate(135deg);
+    left: -50px;
+}
+
+.carousel-control-next-icon {
+    transform: rotate(-45deg);
+    right: -50px;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-body .details {
+    text-align: left;
+}
+
+.card-body .btn {
+    margin-top: 10px;
+}
+
+.empty-space {
+    background-color:white;
+    height: 500px;
+}
+
+.colored {
+    background-color: gainsboro;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.curved-card {
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    margin-left: 150px;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.with-comma::before {
+    content: "،،";
+    font-size: 3rem;
+    color: #000000;
+   vertical-align: auto;
+   left:5% ;
+}
+
+footer {
+    padding: 2rem 0;
+  }
+
+  footer h3, footer h4 {
+    margin-bottom: 1rem;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  footer a {
+    text-decoration: none;
+  }
+
+  footer ul li {
+    margin-bottom: 1.5rem;
+  }
+
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  .unavailable-btn {
+    background: #e3dad8 ;
+    color: #7c7370 ;
+    border: 2px solid black;
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: auto;
+}
+.card, .btn, .curved-card {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.curved-card:hover {
+    transform: scale(1.02);
+}

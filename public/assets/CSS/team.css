@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hamburger {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 11px;
+    width: 70px;
+    right: 0;
+    left:auto;
+
+}
+.hamburger {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}
+
+footer {
+    padding: 2rem 0;
+  }
+
+  footer h3, footer h4 {
+    margin-bottom: 1rem;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  footer a {
+    text-decoration: none;
+  }
+
+  footer ul li {
+    margin-bottom: 1.5rem;
+  }
+
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+
+/* Swiper Container */
+.team-slider {
+    width: 100%;
+    max-width: 100%;
+    margin: 6% 0;
+}
+
+/* Swiper */
+.swiper {
+    width: 100%;
+}
+
+
+/* Navigation Buttons */
+.swiper-button-prev, .swiper-button-next {
+    color: black;
+    font-size: 10px;
+    margin: 0 0;
+}
+
+.swiper-wrapper{
+    display: flex;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.swiper-slide img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    filter: brightness(50%) blur(2px);
+}
+
+.swiper-slide-active img {
+    width: 150px;
+    height: 150px;
+    filter: brightness(100%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide p {
+    font-size: 16px;
+    color: #333;
+    filter: brightness(50%) blur(2px);
+    transition: all 0.3s ease-in-out;
+}
+
+.swiper-slide-active p {
+    filter: brightness(100%) blur(0px);
+}
+
+
+
+@media screen and (max-width : 768px) {
+    header ul{
+        display: none;
+    }
+    #mySidenav2{
+        display: inline-block;
+        padding-right: 20px;
+        padding-top: 15px;
+    }
+    #mySidenav1{
+        display: inline-block;
+    }
+    .colored h2{
+        font-size: 1.1rem;
+    }
+    .colored p{
+        font-size: 0.9rem;
+    }
+
+
+}
+@media screen and (min-width : 1700px) {
+    .logo{font-size: 60px;}
+    .search{width: 30px;}
+    .profile{width: 40px;}
+    header ul a{font-size: 35px;}
+    .textt{font-size: 75px;}
+    .btnn{height: 65px; width: 210px;font-size: 25px;}
+
+
+}
+@media screen and (min-width : 2700px) {
+    .logo{font-size: 90px;}
+    .search{width: 50px;}
+    .profile{width: 60px;}
+    header ul a{font-size: 45px;}
+    .textt{font-size: 120px;}
+    .btnn{height: 85px; width: 310px;font-size: 35px;border-radius: 50px;}
+    header ul li {margin-top: 30px;}
+    .line11{
+        height: 65px;
+        width: 6px;
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width : 4500px) {
+    .logo{font-size: 150px;}
+    .search{width: 80px;}
+    .profile{width: 90px;}
+    header ul a{font-size: 80px;}
+    .textt{font-size: 200px;}
+    .btnn{height: 150px; width: 650px;font-size: 70px;border-radius: 75px;}
+    header ul li {margin-top: 60px;}
+    .line11{
+        height: 120px;
+        width: 15px;
+    }
+    span.dropdown-toggle{width: 100px;}
+
+
+
+}
+
+
+
+
+@media screen and (max-width : 575px) {
+    .textt{
+        font-size: 40px;
+    }
+    .logo{
+        font-size: 25px;
+        margin-left: 0;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+    color: black;
+    font-size: 5px;
+    margin: 0 0;
+
+    }
+    .text-light{
+        font-size: 15px ;
+
+    }
+
+    .team-slider {
+    width: 100%;
+    max-width: 100%;
+    margin: 8% 0;
+}
+.swiper-slide p {
+    font-size: 12px;
+    color: #333;
+    filter: brightness(50%) blur(2px);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 5px;
+}
+
+.swiper-slide-active p {
+    filter: brightness(100%) blur(0px);
+    margin-bottom: 5px;
+}
+
+
+.swiper-slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    filter: brightness(50%) blur(2px);
+}
+
+.swiper-slide-active img {
+    width: 140px;
+    height: 140px;
+    filter: brightness(100%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+}
+
+
+

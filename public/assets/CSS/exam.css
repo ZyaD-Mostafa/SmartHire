@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+      -webkit-user-select: none;  /* Chrome/Safari */
+  -moz-user-select: none;     /* Firefox */
+  -ms-user-select: none;      /* IE/Edge */
+  user-select: none;          /* Standard */
+
+}
+input, textarea {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #ffffff;
+}
+.back-arrow {
+    text-decoration: none;
+    bottom: 20%;
+    cursor: pointer;
+    font-size: 32px;
+    color: #d2333b;
+}
+.quiz-info {
+    text-align: left;
+}
+
+.timer-section {
+    text-align: right;
+}
+.timer-bar {
+    width: 250px;
+    height: 20px;
+    background: transparent;
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid #d2333b;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.timer-fill {
+    width: 100%;
+    height: 100%;
+    background: #d2333b;
+    position: absolute;
+    border-radius: 10px;
+}
+hr {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+.quiz-container {
+    color: #000000;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.question {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 25px;
+    margin-left: -45%;
+}
+
+label {
+    display: block;
+    margin: 15px 0;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.points {
+    font-size: 24px;
+    color: grey;
+    white-space: nowrap;
+    font-weight: bold;
+    margin-left: 130%;
+    margin-top: -70px;
+    position: relative;
+}
+
+
+.written-question textarea {
+    color: #000000;
+    width: 50%;
+    height: 100px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    margin-left: 30px;
+}
+.submit-btn {
+    width: 15%;
+    background: #d2333b;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #d2333b;
+    cursor: pointer;
+    display: block;
+    margin-left: 90%;
+}
+
+.feedback-section1 {
+    display: flex;
+    justify-content: left;
+    gap: 120px !important;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+.feedback-option1 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s;
+
+}
+
+.feedback-option1 i {
+    margin-right: 5px;
+}
+
+.feedback-option1.active {
+    color: #d2333b;
+}
+
+
+.blur {
+    filter: blur(7px);
+    pointer-events: none;
+}
+
+.alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1001;
+    height: 200px;
+    width: 400px;
+}
+
+.custom-alert button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    gap: 30% !important;
+}
+
+.yes-btn {
+    background: rgb(4, 87, 4);
+    color: white;
+    bottom: 50px;
+    left: 20px;
+}
+
+.no-btn {
+    background: #d2333b;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .quiz-container {
+        width: 90% !important;
+    }
+    .points {
+        margin-left: 0 !important;
+        display: block;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+    .submit-btn {
+        width: 50% !important;
+        margin: 0 auto;
+        display: block;
+    }
+    .feedback-section1{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px !important;
+    }
+    .timer-section {
+        text-align: center !important;
+    }
+    .written-question textarea {
+        width: 100%;
+        height: 60px;
+    }
+
+
+    .question {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    label {
+        margin-left: 0;
+        text-align: center;
+    }
+}

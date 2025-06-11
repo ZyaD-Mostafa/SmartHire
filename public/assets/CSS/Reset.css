@@ -1,0 +1,47 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .reset-container {
+    max-width: 1000px;
+    height: 70%;
+    margin: 150px auto;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 40px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-reset {
+    background-color: rgb(123, 110, 118);
+    border-color: rgb(123, 110, 118);
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .btn-reset:hover,
+  .btn-reset:focus {
+    background-color: rgb(123, 110, 118);
+    border-color: rgb(123, 110, 118);
+    color: #fff;
+    box-shadow: none;
+  }
+  
+  .footer-text {
+    font-size: 0.9rem;
+    color: black;
+  }
+  

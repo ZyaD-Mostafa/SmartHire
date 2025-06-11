@@ -1,0 +1,448 @@
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background:linear-gradient(#302927, rgba(255, 255, 255, 0));
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+}
+.hamburger {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 11px;
+    width: 70px;
+    right: 0;
+    left:auto;
+}
+.cardinfo h1 {
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    top: 190px !important; /* Add !important to override any other rules */
+    left: 40% !important;
+}
+
+#back-vid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(5px); /* Blur effect */
+    opacity: 1.9;       /* Optional: make it less intense */
+}
+
+
+.sidenav a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: black;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.hamburger {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+header{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 15%;
+    margin: 0;
+    width: 100%;
+}
+.row{
+    width: 100%;
+}
+.logo{
+    margin-top: 30px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+header ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header ul li {
+    margin-top: 10px;
+position: relative;
+}
+
+header ul a{
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.line11{
+    height: 35px;
+    width: 4px;
+    border-right:solid 1px rgb(255, 255, 255) ;
+}
+header ul a:hover{
+    color: #302927;
+    cursor: pointer;
+}
+
+.dropdown{
+    z-index: 1000;
+}
+
+header ul .dropdown {
+display: none;
+position: absolute;
+width: auto;
+background-color: white;
+border-radius: 20px;
+list-style: none;
+padding: 20px 0;
+margin: 0;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+header ul .dropdown li {
+padding: 10px;
+margin: 0;
+width: 100%;
+}
+
+
+header ul .dropdown a {
+font-size: 15px;
+padding: 10px 20px;
+white-space: nowrap;
+border-bottom: none;
+color: #302927;
+}
+
+
+
+header ul .dropdown a:hover {
+background-color: #302927;
+border-radius: 30px;
+color: white;}
+
+.search{
+    width:20px;
+}
+
+
+#back-vid{
+    width: 100vw;
+    height: 100vh;
+    object-fit:cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background:linear-gradient( #ddd2d5c5, #7c7370d2);
+
+}
+.containerone{
+    background:linear-gradient( #ddd2d5c5, #7c7370d2);
+    height: 100vh;
+}
+h2{
+    position: relative;
+    top: -100px;
+    left:-6%;
+    color: white;
+    font-weight: bold;
+}
+.contentt{
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.cardd{
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 3%;
+    text-align: center;
+    background:#fff;
+    width:80%;
+    padding: 50px 20px 20px;
+    border-radius: 25px;
+    height: 75vh;
+}
+.profileimg{
+    position: absolute;
+    top:60px;
+    left:30%;
+    transform:translateX(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    background: #ddd;
+
+}
+.profileimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardinfo{
+    display: block;
+    margin-top: 4%;
+
+}
+.cardinfo div{
+    display: flex;
+}
+.cardinfo h1{
+    font-size: 35px;
+    font-weight: bold;
+    position:absolute;
+    top:190px;
+    left: 40%;
+}
+.firstinfo{
+    margin-top: 0%;
+}
+.cardinfo h3{
+    margin-left: 10%;
+    text-align: start;
+    font-weight: bold;
+    font-size: 22px;
+    width:50%
+}
+.cardinfo p{
+    font-size: 22px;
+    text-align: start;
+    width: 50%;
+
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.button{
+    width: 150px;
+    height: 40px;
+    border: 2px solid #302927;
+    background-color: #302927;
+    border-radius: 25px;
+    margin-top: 40px;
+    font-size: large;
+    font-weight: bold;
+    color: #302927;
+}
+.button:hover{
+    background-color: #554845;
+}
+.btna{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+@media screen and (max-width : 768px) {
+    header ul{
+        display: none;
+    }
+    #mySidenav2{
+        display: inline-block;
+        padding-right: 20px;
+        padding-top: 15px;
+    }
+    #mySidenav1{
+        display: inline-block;
+    }
+}
+@media screen and (max-width : 400px){
+    .profileimg{width: 70px; height: 70px; top:90px; left:30%;}
+    .cardinfo h1{font-size: 17px;top:160px;left: 45%;}
+    h2{top: -80px; left:19%; font-size: 17px;}
+    .cardinfo h3{ margin-left: 10%; font-size: 11px; width:50%}
+    .cardinfo p{font-size: 11px; }
+    .button{width: 110px;height: 35px;border: 2px solid #302927;font-size: 12px;}
+
+}
+@media screen and (min-width : 400px) and (max-width: 720px) {
+    .profileimg{width: 70px; height: 70px; top:120px; left:30%;}
+    .cardinfo h1{font-size: 17px;top:160px;left: 45%;}
+    h2{top: -80px; left:19%; font-size: 17px;}
+    .cardinfo h3{ margin-left: 10%; font-size: 11px; width:50%}
+    .cardinfo p{font-size: 11px; }
+    .button{width: 110px;height: 35px;border: 2px solid #302927;font-size: 12px;}
+}
+
+@media screen and (min-width : 500px) and (max-width: 720px) {
+    .profileimg{width: 110px; height: 110px;}
+    .cardinfo h1{font-size: 27px;top:170px;}
+    h2{top: -90px; font-size: 27px;}
+    .cardinfo h3{font-size: 18px;}
+    .cardinfo p{font-size: 18px; }
+    .button{width: 120px;border: 3px solid #302927;font-size: 20px;}
+}
+@media screen and (min-width : 720px) and (max-width: 1200px) {
+    .profileimg{width: 150px; height: 150px; top:130px; left:25%;}
+    .cardinfo h1{font-size: 35px; top:240px; left: 35%;}
+    h2{font-size: 35px; left:0%;}
+    .button{width: 120px;border: 3px solid #302927;font-size: 20px;}
+}
+
+@media screen and (min-width : 1200px) {
+    .profileimg{width: 170px; height: 170px;}
+    .cardinfo h1{top:170px; left: 40%;}
+
+}
+
+@media screen and (min-width : 1700px) {
+    .cardinfo h1{
+        font-size: 40px;
+        top:200px;
+        left: 40%;
+    }
+    .profileimg{
+        left:25%;
+        top:30px;
+        width: 250px;
+        height: 250px;
+    }
+    h2{
+        top: -100px;
+        left:-6%;
+        font-size: 40px;
+    }
+    .cardinfo h3{
+        margin-left: 10%;
+        font-size: x-large;
+        width:30%
+    }
+    .cardinfo p{font-size: x-large;}
+    .button{
+        width: 200px;
+        height: 60px;
+        border: 3px solid #302927;
+        border-radius: 35px;
+        font-size: x-large;
+    }
+
+}
+
+@media screen and (min-width : 2000px) {
+    .cardinfo h1{font-size: 40px;top:270px;left: 40%;}
+    .profileimg{width: 280px; height: 280px;}
+    h2{top: -120px;}
+}
+
+@media screen and (min-width : 2700px) {
+    .cardinfo h1{
+        font-size: 60px;
+        top:310px;
+        left: 40%;
+    }
+    .profileimg{
+        width: 400px;
+        height: 400px;
+    }
+    h2{
+        top: -150px;
+        font-size: 60px;
+    }
+    h2 img{width: 80px;}
+    .cardinfo h3{
+        margin-left: 10%;
+        font-size: 40px;
+        width:30%
+    }
+    .cardinfo p{font-size: 40px;}
+    .button{
+        width: 300px;
+        height: 80px;
+        border: 5px solid #302927;
+        border-radius: 55px;
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (min-width : 4500px) {
+    .cardinfo h1{
+        font-size: 90px;
+        top:550px;
+        left: 40%;
+    }
+    .profileimg{
+        width: 600px;
+        height: 600px;
+    }
+    h2{
+        top: -170px;
+        font-size: 90px;
+    }
+    .cardinfo h3{font-size: 60px;}
+    .cardinfo p{font-size: 60px;}
+    .button{
+        width: 500px;
+        height: 130px;
+        border: 7px solid #302927;
+        border-radius: 70px;
+        font-size: 60px;
+    }
+}

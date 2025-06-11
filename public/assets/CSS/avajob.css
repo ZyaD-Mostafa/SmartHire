@@ -1,0 +1,313 @@
+body {
+    width: 100%;
+}
+.container1 {
+    background-color: #e3dad8;
+    margin: auto;
+    padding: 20px;
+   margin: 0 2rem;
+   margin-bottom: 1rem;
+
+}
+.hamburger {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 11px;
+    width: 70px;
+    right: 0;
+    left:auto;
+
+}
+footer {
+    padding: 2rem 0; 
+  }
+  
+  footer h3, footer h4 {
+    margin-bottom: 1rem;
+  }
+  
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  
+  footer ul li {
+    margin-bottom: 1.5rem; 
+  }
+  
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+.hamburger {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}
+
+.img-fluid {
+    width: 8%; /* Ensures images are fully responsive */
+    height: 1%;
+    padding-right: 1%;
+}
+
+.text-content {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: start;
+    margin-top: 10px;
+}
+
+/* Button Styling */
+.responsive-btn {
+    background-color: transparent;
+    border: 2px solid red;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    width: auto;
+}
+
+.responsive-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.col-md-8{
+    display: flex;
+}
+
+.col-sm-12{
+    display: flex;
+}
+
+.description{
+        font-size: 15px;
+
+}
+
+
+
+.exam{
+    font-size: 18px;
+    margin-left: 5%;
+    width: 200px;
+}
+
+
+
+.newsimg{
+    width: 100%;
+    height: 250px;
+}
+
+.newsp{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 2%;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.605);
+}
+
+.progress{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+}
+.progressicon{
+
+    margin-left: 12%;
+
+}
+
+.pprogress{
+    margin-top: 0;
+    font-weight: bold;
+    margin-left: 9%;
+}
+
+
+
+
+/* Full-width button on small screens */
+@media (max-width: 576px) {
+    .responsive-btn {
+        width: auto;
+        font-size: 12px;
+        padding: 12px;
+        margin: 0;
+
+    }
+    .row {
+    display: flex;
+}
+
+
+.col-md-8 {
+    width: 70%;
+}
+
+.col-sm-12{
+    width: 70%;
+
+}
+.col-md-4{
+    width: auto;
+}
+.text-content{
+        width: auto;
+        font-size: 15px;
+    }
+
+    .img-fluid{
+        width: 15%;
+        height: 10%;
+    }
+
+    .description{
+        font-size: 12px;
+        width: 250px;
+
+    }
+
+    .exam{
+    font-size: 15px;
+    width: 200px;
+    padding: 0;
+    margin-bottom: 0;
+
+}
+
+.newsp{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 2%;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.605);
+    font-size: 13px;
+    width: 80%;
+}
+
+.newsimg{
+    width: 100%;
+    height: 180px;
+}
+
+.progress{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+}
+.progressicon{
+
+    margin-left: 2%;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 0;
+
+}
+
+.pprogress{
+    margin-top: 0;
+    font-weight: bold;
+    margin-left: 2%;
+    font-size: 11px;
+    width: 100%;
+}
+
+}
+
+
+
+
+body{
+margin: 0;
+padding: 0;
+}
+
+
+
+
+/* @media screen and (min-width : 1700px) {
+.logo{font-size: 60px;}
+.search{width: 30px;}
+.profile{width: 40px;}
+header ul a{font-size: 35px;}
+.textt{font-size: 75px;}
+.btnn{height: 65px; width: 210px;font-size: 25px;}
+
+}
+@media screen and (min-width : 2700px) {
+.logo{font-size: 90px;}
+.search{width: 50px;}
+.profile{width: 60px;}
+header ul a{font-size: 45px;}
+.textt{font-size: 120px;}
+.btnn{height: 85px; width: 310px;font-size: 35px;border-radius: 50px;}
+header ul li {margin-top: 30px;}
+.line11{
+height: 65px;
+width: 6px;
+}
+
+}
+
+
+@media screen and (min-width : 4500px) {
+.logo{font-size: 150px;}
+.search{width: 80px;}
+.profile{width: 90px;}
+header ul a{font-size: 80px;}
+.textt{font-size: 200px;}
+.btnn{height: 150px; width: 650px;font-size: 70px;border-radius: 75px;}
+header ul li {margin-top: 60px;}
+.line11{
+height: 120px;
+width: 15px;
+}
+span.dropdown-toggle{width: 100px;} */
+
+/* } */
+
+
+
+@media screen and (max-width : 900px) {
+#paragraph{
+width: 90%;
+}
+
+}
+
+@media screen and (max-width : 550px) {
+.textt{
+font-size: 40px;
+}
+}
+
+
