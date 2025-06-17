@@ -192,6 +192,8 @@
         display: block;
       }
     }
+
+    
   </style>
   <header class="row">
     <!-- Logo container with hamburger icon -->
@@ -218,16 +220,7 @@
         </a>
       </li>
     </ul>
-    <span id="menuIcon" class="hamburger" onclick="openNav()">&#9776;</span>
-
-<!-- Side Navigation Menu -->
-<div id="sideNav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="{{url('/')}}">Home</a></a>
-    <a href="{{route ('user.feedback')}}">Feedback</a>
-    <a href="{{route('user.team')}}">Our Team</a>
-    <a href="#footerr">Contact US</a>
-</div>
+    
   </header>
 
   <!-- Side Navigation Menu -->

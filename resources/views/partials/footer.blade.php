@@ -1,38 +1,37 @@
-
 <footer class="text-light py-4" id="footerr" style="background-color: #302927;">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-start mb-4">
-                    <h3 class="mb-0" style="font-family: 'Comic Sans MS', cursive;">SmartHire</h3>
-                </div>
+    {{-- Use container-fluid for a full-width layout --}}
+    <div class="container-fluid"> 
+        <div class="row">
+            <div class="col-12 text-start mb-4">
+                <h3 class="mb-0" style="font-family: 'Comic Sans MS', cursive;">SmartHire</h3>
             </div>
-    
-            <div class="row justify-content-between">
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <p style="font-family:canva sans;"><strong>Members Directory:</strong></p>
-                    <a href="mailto:smarthireteam@gmail.com" class="text-light" style="font-family:canva sans;">smarthireteam11@gmail.com</a>
-                </div>
-    
-                <div class="col-lg-6 col-md-12 mb-4">
-                    <h4 class="mb-3" style="font-family:canva sans;">Links</h4>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <ul class="list-unstyled"> 
-                                <li><a href="#" class="text-light" style="font-family:canva sans;">About Us</a></li>
-                                <li><a href="#" class="text-light" style="font-family:canva sans;">Recruitment Services</a></li>
-                                <li><a href="#" class="text-light" style="font-family:canva sans;">Feedback</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="text-light" style="font-family:canva sans;">Partner</a></li>
-                                <li><a href="#" class="text-light" style="font-family:canva sans;">Contact Us</a></li>
-                                <li><a href="#" class="text-light" style="font-family:canva sans;">Policy & Privacy</a></li>
-                            </ul>
-                        </div>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <p style="font-family:canva sans;"><strong>Members Directory:</strong></p>
+                <a href="mailto:smarthireteam@gmail.com" class="text-light" style="font-family:canva sans;">smarthireteam11@gmail.com</a>
+            </div>
+
+            <div class="col-lg-6 col-md-12 mb-4">
+                <h4 class="mb-3" style="font-family:canva sans;">Links</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light" style="font-family:canva sans;">About Us</a></li>
+                            <li><a href="#" class="text-light" style="font-family:canva sans;">Recruitment Services</a></li>
+                            <li><a href="#" class="text-light" style="font-family:canva sans;">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light" style="font-family:canva sans;">Partner</a></li>
+                            <li><a href="#" class="text-light" style="font-family:canva sans;">Contact Us</a></li>
+                            <li><a href="#" class="text-light" style="font-family:canva sans;">Policy & Privacy</a></li>
+                        </ul>
                     </div>
                 </div>
-    
+            </div>
 
             <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <h4 class="mb-3" style="font-family:canva sans;">Follow Us</h4>
@@ -59,8 +58,9 @@
                     </li>
                 </ul>
             </div>
+        </div>
 
         <hr class="my-4">
-        <p class="text-center">&copy; 2025 SmartHire. All Rights Reserved.</p>
+        <p class="text-center">© 2025 SmartHire. All Rights Reserved.</p>
     </div>
 </footer>

@@ -21,19 +21,19 @@ class StoreUserAppRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            'name' => 'required|string|max:40',
-            'email' => 'required|email',
-            'phone' => 'required|string|max:20',
-            'secPhone' => 'string|max:20',
-            'national_id' => 'required|string',
-            'address' => 'required|string|max:255',
-            'dob' => 'required|date',
-            'grad_year' => 'required|string|max:4',
-            'university' => 'required|string|max:255',
-            'degree' => 'required|string|max:255',
-            'cv' => 'required|file|mimes:pdf,doc,docx,txt,odt,rtf|max:2048'
-        ];
+       return [
+        'name' => 'required|string|max:40',
+        'email' => 'required|email',
+        'phone' => ['required', 'regex:/^01[0-2,5]{1}[0-9]{8}$/'],
+        'secPhone' => ['nullable', 'regex:/^01[0-2,5]{1}[0-9]{8}$/'],
+        'national_id' => ['required', 'digits:14'],
+        'address' => 'required|string|max:255',
+        'dob' => 'required|date',
+        'grad_year' => ['required', 'digits:4', 'integer', 'min:1950', 'max:' . date('Y')],
+        'university' => 'required|string|max:255',
+        'degree' => 'required|string|max:255',
+        'cv' => 'required|file|mimes:pdf,doc,docx,txt,odt,rtf|max:2048',
+    ];
     }
 
     /**
@@ -41,20 +41,5 @@ class StoreUserAppRequest extends FormRequest
      *
      * @return array
      */
-    public function attributes()
-    {
-        return [
-            'name' => 'Full Name',
-            'email' => 'Email Address',
-            'phone' => 'Phone Number',
-            'secPhone' => 'Secondary Phone Number',
-            'national_id' => 'National ID',
-            'address' => 'Address',
-            'dob' => 'Date of Birth',
-            'grad_year' => 'Graduation Year',
-            'university' => 'University/College',
-            'degree' => 'Degree Major',
-            'cv' => 'CV',
-        ];
-    }
+   
 }

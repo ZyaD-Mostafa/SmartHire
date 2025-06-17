@@ -39,7 +39,7 @@
                 <div class="enteryname">
                     <label>Last Name</label>
                     <br>
-                    <input type="text" name="last_name" value="{{ old('last_name') }}" required>
+                    <input type="text" name="last_name" value="{{ old('last_name') }}" >
                     @error('last_name')
                         <p style="color: red; font-size: 12px;">{{ $message }}</p>
                     @enderror

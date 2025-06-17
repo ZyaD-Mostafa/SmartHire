@@ -185,7 +185,7 @@
                                 @foreach ($chunk as $job)
                                     <div class="col-lg-4 col-md-6 col-12 mb-4">
                                         <div class="card">
-                                            <img src="{{$job->image}}" alt="{{ $job->name }} Logo"
+                                            <img src="{{$job->user->profile_photo}}" alt="{{ $job->user->name }} Logo"
                                                 class="card-img-top">
                                             <div class="card-body">
                                                 <h5 class="card-title" style="font-family: 'Comic Sans MS', cursive;">
@@ -282,7 +282,6 @@
         </div>
 
         <!-- Footer Section -->
-        @include('partials.footer')
 
 
     </section>
@@ -291,6 +290,8 @@
     <script src="{{ asset('assets/JS/main.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+            @include('partials.footer')
 
 </body>
 

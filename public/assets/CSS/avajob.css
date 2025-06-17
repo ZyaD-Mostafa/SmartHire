@@ -21,32 +21,7 @@ body {
     left:auto;
 
 }
-footer {
-    padding: 2rem 0; 
-  }
-  
-  footer h3, footer h4 {
-    margin-bottom: 1rem;
-  }
-  
-  footer ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  footer a {
-    text-decoration: none;
-  }
-  
-  footer ul li {
-    margin-bottom: 1.5rem; 
-  }
-  
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
+
 .hamburger {
     font-size: 30px;
     color: white;
@@ -99,9 +74,7 @@ footer {
     display: flex;
 }
 
-.col-sm-12{
-    display: flex;
-}
+
 
 .description{
         font-size: 15px;

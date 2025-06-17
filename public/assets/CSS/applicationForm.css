@@ -12,6 +12,16 @@ body{
     width: 100%;
     height: 100vh;
 }
+.error-message {
+    color: red;
+    font-size: 14px;
+    /* Adjust this value to move the message up or down.
+       Less negative means lower down. */
+    margin-top: -30px; 
+    
+    /* This ensures there's space before the next form field starts */
+    padding-bottom: 10px; 
+}
 .phoneimage{
     display: none;
     width: 200% !important;

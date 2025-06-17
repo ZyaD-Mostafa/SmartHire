@@ -12,7 +12,7 @@
 
                     <th style="border-right: 1px solid #FFFFFF;">Name</th>
                     <th style="border-right: 1px solid #FFFFFF;">Email</th>
-                    <th style="border-right: 1px solid #FFFFFF;">Phone</th>
+                    <th style="border-right: 1px solid #FFFFFF;">Phones</th>
                     <th style="border-right: 1px solid #FFFFFF;">Exam</th>
                     <th style="border-right: 1px solid #FFFFFF;">National ID</th>
                     <th style="border-right: 1px solid #FFFFFF;">Address</th>
@@ -33,7 +33,7 @@
                     <td>{{ $app->job->name }}</td>
                     <td>{{ $app->name }}</td>
                     <td>{{ $app->email }}</td>
-                    <td>{{ $app->phone }}/{{ $app->sec_phone }}</td>
+                    <td>{{ $app->phone }} / {{ $app->sec_phone }}</td>
                     <td>{{ $app->national_id }}</td>
                     <td>{{ $app->address }}</td>
                     <td>{{ $app->dob }}</td>

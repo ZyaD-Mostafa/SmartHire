@@ -15,9 +15,10 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->string('name');
+            $table->string('image')->nullable()->default('non');
             $table->string('major'); // التخصص أو القسم
             $table->string('location');
-            $table->string('duration'); // مدة الإعلان أو الوقت (مثلاً: "1 hour", "3 hours")
+            $table->string('duration');
             $table->boolean('is_available')->default(0);
             $table->unsignedInteger('exam_count')->default(0);
             $table->timestamps();
