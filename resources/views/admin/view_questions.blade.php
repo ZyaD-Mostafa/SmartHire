@@ -26,11 +26,11 @@
                   <td>{{ $question->question_type }}</td>
                   <td>{{ $question->correct_answer }}</td>
                   <td>
-                    <a href="{{ route('admin.edit.questions',$question->id) }}" >Edit</a>
+                    <a href="{{ route('admin.edit.questions',$question->id) }}"  class="btn btn-primary" style="width: 5rem" >Edit</a>
                     <form action="{{ route('admin.delete.questions',$question->id) }}" method="post" style="display:inline-block">
                         @csrf
                         @method('DELETE')
-                        <button type="submit">Delete</button>
+                        <button type="submit" class="btn btn-danger" style="width: 5rem" >Delete</button>
                     </form>
                   </td>
 

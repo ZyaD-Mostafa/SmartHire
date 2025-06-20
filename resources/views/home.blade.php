@@ -185,7 +185,7 @@
                                 @foreach ($chunk as $job)
                                     <div class="col-lg-4 col-md-6 col-12 mb-4">
                                         <div class="card">
-                                            <img src="{{$job->user->profile_photo}}" alt="{{ $job->user->name }} Logo"
+                                            <img src="{{ asset('uploads/profile_photos/' . $job->user->profile_photo) }}" alt="{{$job->user->profile_photo}} Logo" alt="{{ $job->user->name }} Logo"
                                                 class="card-img-top">
                                             <div class="card-body">
                                                 <h5 class="card-title" style="font-family: 'Comic Sans MS', cursive;">

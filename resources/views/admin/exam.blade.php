@@ -36,7 +36,7 @@
               <div class="card bg-pattern">
                   <div class="form-group m-1">
                       <select name="job_id" id="addUserStatus" class="form-control" required>
-                          <option value="">Select University</option>
+                          <option value="">Select Job</option>
                         @foreach ( $jobs as $job )
                           <option value="{{ $job->id }}">{{ $job->name }}</option>
 
@@ -86,7 +86,7 @@
                       <!-- First and last TH get rounded corners -->
                       <th style="border-right: 1px solid #FFFFFF;">ID</th>
                       <th style="border-right: 1px solid #FFFFFF;">Exam Field</th>
-                      <th style="border-right: 1px solid #FFFFFF;">Related University</th>
+                      <th style="border-right: 1px solid #FFFFFF;">Related Job</th>
                       <th style="border-right: 1px solid #FFFFFF;">Total Question</th>
                       <th style="border-top-right-radius: 12px;">Duration</th>
                   </tr>

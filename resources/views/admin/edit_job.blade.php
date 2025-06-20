@@ -35,8 +35,11 @@
     <div class="col-xl-3 col-md-6">
         <div class="card bg-pattern">
             <div class="form-group m-1">
-                <input type="text" value="{{ $job->duration }}"  name="duration" class="w-100 border-1 form-control" placeholder="duration" id="addUserName" required>
-
+            <select name="duration" class="w-100 border-1 form-control" id="selectDuration">
+                <option value="{{$job->duration}}"  >{{$job->duration}}</option>
+                <option value="full_time">Full-time</option>
+                <option value="part_time">Part-time</option>
+            </select>
             </div>
         </div>
     </div>
